@@ -4,19 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-  />
-  <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/demo.js"></script>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/jquery.particleground.min.js"></script>
+  </head>
 
   <body id="home">
     <header
@@ -100,8 +103,8 @@
       </div>
     </header>
     <!-- section - 1 (bg espacial)-->
-    <section class="hexacode-section-1">
-      <div class="hexacode-section-1-mt">
+    <div id="particles" style="background-color: #131411">
+      <div class="hexacode-section-1-mt intro">
         <h1 id="hexacode-title"></h1>
         <p id="hexacode-sub-title">
           <span id="hexacode-sub-title-p-1"></span>
@@ -113,6 +116,8 @@
           <img src="./assets/icons/arrow-right-long-solid.svg" alt="" />
         </button>
       </div>
+    </div>
+    <section class="hexacode-section-1">
       <div class="hexacode-section-1-cards">
         <div class="hexacode-cards-blur-left">
           <img src="./assets/images/blur-left.png" alt="" />
@@ -1086,7 +1091,9 @@
         <button class="button-close-modal close-modal-error">Fechar</button>
       </div>
     </div>
+    <div></div>
     <!-- Slider main container -->
+    <div id="particles">...</div>
   </body>
 </html>
 
@@ -1293,6 +1300,30 @@
   const buttonCloseModalError = document.querySelectorAll('.close-modal-error');
   buttonCloseModalError.forEach((button) => {
     button.addEventListener('click', handleCloseModalError);
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    $('#particles').particleground({
+      minSpeedX: 0.1,
+      maxSpeedX: 0.7,
+      minSpeedY: 0.1,
+      maxSpeedY: 0.7,
+      directionX: 'center', // 'center', 'left' or 'right'. 'center' = dots bounce off edges
+      directionY: 'center', // 'center', 'up' or 'down'. 'center' = dots bounce off edges
+      density: 10000, // How many particles will be generated: one particle every n pixels
+      dotColor: '#666666',
+      lineColor: '#666666',
+      particleRadius: 7, // Dot size
+      lineWidth: 1,
+      curvedLines: false,
+      proximity: 100, // How close two dots need to be before they join
+      parallax: true,
+      parallaxMultiplier: 5, // The lower the number, the more extreme the parallax effect
+      onInit: function () {},
+      onDestroy: function () {},
+    });
   });
 </script>
 
