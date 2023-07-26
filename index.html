@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <body>
+    <header
+      id="header-bg"
+      class="header-bg"
+      style="z-index: 99999999999999999999999999"
+    >
+      <div class="header-flex">
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/images/LOGO-HEXACODE-1.png" alt="Logo" />
+          </a>
+        </div>
+        <nav>
+          <ul class="header-list">
+            <li class="item">
+              <a href="/"> Home </a>
+            </li>
+            <li class="item" onclick="scrollToSection('team')">
+              <a> Sobre </a>
+            </li>
+            <li class="item" onclick="scrollToSection('projects')">
+              <a> Projetos </a>
+            </li>
+            <li class="item" onclick="scrollToSection('services')">
+              <a> Serviços </a>
+            </li>
+            <li class="item" onclick="scrollToSection('contact')">
+              <button>Entre em contato</button>
+            </li>
+          </ul>
+          <button
+            onclick="openMenuMobile()"
+            id="menu-mobile-button"
+            class="menu-mobile-button"
+          >
+            <img
+              src="./assets/icons/menu-mobile.svg"
+              alt=""
+              id="icon-menu-open"
+            />
+          </button>
+          <button
+            onclick="closeMenuMobile()"
+            id="menu-mobile-button-close"
+            class="menu-mobile-button-close hidden-menu-mobile-button-close"
+          >
+            <img
+              src="./assets/icons/circle-xmark.svg"
+              id="icon-menu-close"
+              alt=""
+            />
+          </button>
+          <!-- menu mobile -->
+          <ul class="header-nav-list-mobile" id="menu-mobile">
+            <li>
+              <div class="header-nav-list-button-consult-mobile consult-plate">
+                <button class="header-menu-mobile-button-contact">
+                  Entre com contato
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <span class="text">Home</span>
+            </li>
+            <li onclick="scrollToSection('products')">
+              <span class="text">Sobre</span>
+            </li>
+            <li onclick="scrollToSection('about')">
+              <span class="text">Projetos</span>
+            </li>
+            <li onclick="scrollToSection('step-by-step')">
+              <span class="text">Serviços</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- section - 1 (bg espacial)-->
+    <section class="hexacode-section-1">
+      <div class="hexacode-section-1-mt">
+        <h1 id="hexacode-title"></h1>
+        <p id="hexacode-sub-title">
+          <span id="hexacode-sub-title-p-1"></span>
+          <span id="hexacode-sub-title-text"></span>
+          <span id="hexacode-sub-title-p-2"></span>
+        </p>
+        <button class="hexacode-section-1-button-more-information">
+          Saiba mais
+          <img src="./assets/icons/arrow-right-long-solid.svg" alt="" />
+        </button>
+      </div>
+      <div class="hexacode-section-1-cards">
+        <div class="hexacode-cards-blur-left">
+          <img src="./assets/images/blur-left.png" alt="" />
+        </div>
+        <div class="hexacode-section-1-card column-1">
+          <img src="./assets/images/responsivo.png" alt="" class="icon" />
+          <div>
+            <h2 class="title">Desenvolvimento web e mobile</h2>
+            <p class="text">
+              Nosso serviço de Desenvolvimento Web e Mobile oferece soluções
+              personalizadas e inovadoras para atender às suas necessidades
+              digitais. Com uma equipe de especialistas em desenvolvimento,
+              criamos sites responsivos e intuitivos, além de aplicativos móveis
+              de alta qualidade para iOS e Android. Nossa abordagem orientada
+              por resultados garante que seu projeto seja entregue dentro do
+              prazo, com foco na usabilidade, desempenho e design atraente.
+              Esteja você buscando expandir sua presença online ou alcançar seu
+              público-alvo em dispositivos móveis, estamos aqui para transformar
+              suas ideias em realidade digital e impulsionar seu sucesso no
+              mundo virtual.
+            </p>
+          </div>
+        </div>
+        <div
+          class="hexacode-section-1-card hexacode-section-1-card-main column-2"
+        >
+          <img src="./assets/images/solution.png" alt="" class="icon" />
+          <div>
+            <h2 class="title">Solução tecnologócia</h2>
+            <p class="text">
+              As Soluções Tecnológicas da Hexacode são projetadas para
+              impulsionar o seu negócio com inovação e eficiência. Nossa equipe
+              de especialistas em tecnologia oferece uma ampla gama de serviços,
+              incluindo desenvolvimento web e mobile, consultoria em TI, criação
+              de sistemas personalizados, integração de APIs, automação de
+              processos, análise de dados e muito mais. Combinamos expertise
+              técnica com uma abordagem estratégica para fornecer soluções
+              tecnológicas sob medida que atendam às suas necessidades
+              específicas. Conte com a Hexacode para impulsionar o seu sucesso
+              no mundo digital com soluções inovadoras e eficazes.
+            </p>
+            <button class="hexacode-section-1-card-main-button">
+              Contratar
+              <img src="./assets/icons/arrow-right-long-solid.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div
+          class="hexacode-section-1-card hexacode-section-1-card-last column-3"
+        >
+          <img src="./assets/images/franquia.png" alt="" class="icon" />
+          <div>
+            <h2 class="title">Coleta de dados eficiente e personalizada</h2>
+            <p class="text">
+              Nosso serviço de Coleta de Dados é eficiente e personalizado para
+              atender às suas necessidades específicas. Com uma abordagem
+              cuidadosamente planejada, utilizamos métodos avançados para
+              coletar informações relevantes e precisas. Nossa equipe experiente
+              garante a confiabilidade dos dados, implementando processos
+              eficientes e adaptados às suas demandas. Combinando tecnologia e
+              expertise, fornecemos uma solução de coleta de dados confiável e
+              personalizada, permitindo que você tome decisões informadas e
+              estratégicas para impulsionar seu negócio.
+            </p>
+          </div>
+        </div>
+        <div class="hexacode-cards-blur-right">
+          <img src="./assets/images/blur-right.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- projetos -->
+    <section id="projects">
+      <div class="projects-content">
+        <h2 class="title">projetos</h2>
+        <span class="sub-title"
+          >Alguns dos nossos <br />
+          <span id="projects-content-projects"></span
+        ></span>
+
+        <div class="glider-contain">
+          <div
+            class="slide-navegations-buttons-flex slide-navigations-products-flex"
+          >
+            <button
+              aria-label="Previous"
+              class="glider-prev projects-slides-navegations-button slide-navegations-buttons"
+            >
+              <svg
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_225_11)">
+                  <path
+                    d="M0.825927 20.5137C-0.272706 21.6123 -0.272706 23.3965 0.825927 24.4951L12.0759 35.7451C13.1746 36.8437 14.9587 36.8437 16.0574 35.7451C17.156 34.6465 17.156 32.8623 16.0574 31.7637L9.6062 25.3125L42.1873 25.3125C43.7429 25.3125 44.9998 24.0557 44.9998 22.5C44.9998 20.9443 43.7429 19.6875 42.1873 19.6875L9.6062 19.6875L16.0574 13.2363C17.156 12.1377 17.156 10.3535 16.0574 9.25488C14.9587 8.15625 13.1746 8.15625 12.0759 9.25488L0.825927 20.5049V20.5137Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_225_11">
+                    <rect
+                      width="45"
+                      height="45"
+                      fill="white"
+                      transform="matrix(-1 0 0 -1 44.9998 45)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <button
+              aria-label="Next"
+              class="glider-next projects-slides-navegations-button slide-navegations-buttons"
+            >
+              <svg
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M44.1738 24.4863C45.2725 23.3877 45.2725 21.6035 44.1738 20.5049L32.9238 9.25488C31.8252 8.15625 30.041 8.15625 28.9424 9.25488C27.8437 10.3535 27.8437 12.1377 28.9424 13.2363L35.3936 19.6875H2.8125C1.25684 19.6875 0 20.9443 0 22.5C0 24.0557 1.25684 25.3125 2.8125 25.3125H35.3936L28.9424 31.7637C27.8437 32.8623 27.8437 34.6465 28.9424 35.7451C30.041 36.8438 31.8252 36.8438 32.9238 35.7451L44.1738 24.4951V24.4863Z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul class="glider">
+              <li class="project-item">
+                <div class="icon-container">
+                  <img
+                    src="./assets/icons/projetos-icon-buscplacas.png"
+                    alt=""
+                    class="icon"
+                  />
+                </div>
+                <span class="name">Busca Placas</span>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
+                <a href="https://placamais.com.br/" class="link"
+                  >Ver projeto
+                  <img
+                    width="30px"
+                    height="20px"
+                    src="./assets/icons/arrow-right-long-solid-green.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="project-item">
+                <div class="icon-container">
+                  <img
+                    src="./assets/icons/projetos-icon-buscplacas.png"
+                    alt=""
+                    class="icon"
+                  />
+                </div>
+                <span class="name">Busca Placas</span>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
+                <a href="https://placamais.com.br/" class="link"
+                  >Ver projeto
+                  <img
+                    width="30px"
+                    height="20px"
+                    src="./assets/icons/arrow-right-long-solid-green.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="project-item">
+                <div class="icon-container">
+                  <img
+                    src="./assets/icons/projetos-icon-buscplacas.png"
+                    alt=""
+                    class="icon"
+                  />
+                </div>
+                <span class="name">Busca Placas</span>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
+                <a href="https://placamais.com.br/" class="link"
+                  >Ver projeto
+                  <img
+                    width="30px"
+                    height="20px"
+                    src="./assets/icons/arrow-right-long-solid-green.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="project-item">
+                <div class="icon-container">
+                  <img
+                    src="./assets/icons/projetos-icon-buscplacas.png"
+                    alt=""
+                    class="icon"
+                  />
+                </div>
+                <span class="name">Busca Placas</span>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
+                <a href="https://placamais.com.br/" class="link"
+                  >Ver projeto
+                  <img
+                    width="30px"
+                    height="20px"
+                    src="./assets/icons/arrow-right-long-solid-green.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="project-item">
+                <div class="icon-container">
+                  <img
+                    src="./assets/icons/projetos-icon-buscplacas.png"
+                    alt=""
+                    class="icon"
+                  />
+                </div>
+                <span class="name">Busca Placas</span>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
+                <a href="https://placamais.com.br/" class="link"
+                  >Ver projeto
+                  <img
+                    width="30px"
+                    height="20px"
+                    src="./assets/icons/arrow-right-long-solid-green.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- seção de serviços -->
+    <section class="services-bg" id="services">
+      <div class="services-content">
+        <div class="content">
+          <h2 class="title">serviços</h2>
+          <span class="sub-title">A solução perfeita pra você! <3 </span>
+          <p class="text">
+            Somos uma equipe apaixonada por tecnologia e inovação, dedicada a
+            criar soluções digitais personalizadas que impulsionam o seu
+            negócio. Com a combinação perfeita de design atraente,
+            funcionalidade intuitiva e performance excepcional, entregamos
+            resultados que superam expectativas.
+          </p>
+        </div>
+        <div class="services">
+          <div class="services-column-1">
+            <div class="services-item services-big-data">
+              <h2 class="title">BigData</h2>
+              <button class="button">
+                Contratar
+                <img
+                  src="./assets/icons/arrow-right-long-solid-green.svg"
+                  alt=""
+                  width="28px"
+                />
+              </button>
+            </div>
+            <div class="services-item services-front-back">
+              <h2 class="title">Front e Back end</h2>
+              <button class="button">
+                Contratar
+                <img
+                  src="./assets/icons/arrow-right-long-solid-green.svg"
+                  alt=""
+                  width="28px"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="services-column-2">
+            <div class="services-item services-web-app">
+              <h2 class="title">Desenvolvimento web e app</h2>
+              <button class="button">
+                Contratar
+                <img
+                  src="./assets/icons/arrow-right-long-solid-green.svg"
+                  alt=""
+                  width="28px"
+                />
+              </button>
+            </div>
+            <div class="services-item services-design">
+              <h2 class="title">UI/UX Design</h2>
+              <button class="button">
+                Contratar
+                <img
+                  src="./assets/icons/arrow-right-long-solid-green.svg"
+                  alt=""
+                  width="28px"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="services-blur">
+          <img src="./assets/images/blur-right.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- seção de depoimentos -->
+    <section class="statements-bg" id="statements">
+      <div>
+        <div class="statements-content">
+          <span class="title">depoimentos</span>
+          <span class="sub-title">O que estão dizendo?</span>
+        </div>
+        <div class="swiper swiper1" id="statements-swipet-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="statements-item">
+                <div class="header">
+                  <div class="profile">
+                    <div class="avatar">
+                      <img
+                        src="https://fastly.picsum.photos/id/78/76/76.jpg?hmac=JTKguV2BqgWucpOGKWNrMuVdS0ci1Foex3-PbRAOX0E"
+                        alt=""
+                      />
+                    </div>
+                    <div class="avatar-content">
+                      <span class="title">Joe Jonas</span>
+                      <span class="sub-title">Developer</span>
+                    </div>
+                  </div>
+                  <div class="stars">
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                  </div>
+                </div>
+                <p class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="statements-item">
+                <div class="header">
+                  <div class="profile">
+                    <div class="avatar">
+                      <img
+                        src="https://fastly.picsum.photos/id/78/76/76.jpg?hmac=JTKguV2BqgWucpOGKWNrMuVdS0ci1Foex3-PbRAOX0E"
+                        alt=""
+                      />
+                    </div>
+                    <div class="avatar-content">
+                      <span class="title">Joe Jonas</span>
+                      <span class="sub-title">Developer</span>
+                    </div>
+                  </div>
+                  <div class="stars">
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                  </div>
+                </div>
+                <p class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="statements-item">
+                <div class="header">
+                  <div class="profile">
+                    <div class="avatar">
+                      <img
+                        src="https://fastly.picsum.photos/id/78/76/76.jpg?hmac=JTKguV2BqgWucpOGKWNrMuVdS0ci1Foex3-PbRAOX0E"
+                        alt=""
+                      />
+                    </div>
+                    <div class="avatar-content">
+                      <span class="title">Joe Jonas</span>
+                      <span class="sub-title">Developer</span>
+                    </div>
+                  </div>
+                  <div class="stars">
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                  </div>
+                </div>
+                <p class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="statements-item">
+                <div class="header">
+                  <div class="profile">
+                    <div class="avatar">
+                      <img
+                        src="https://fastly.picsum.photos/id/78/76/76.jpg?hmac=JTKguV2BqgWucpOGKWNrMuVdS0ci1Foex3-PbRAOX0E"
+                        alt=""
+                      />
+                    </div>
+                    <div class="avatar-content">
+                      <span class="title">Joe Jonas</span>
+                      <span class="sub-title">Developer</span>
+                    </div>
+                  </div>
+                  <div class="stars">
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                  </div>
+                </div>
+                <p class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="statements-item">
+                <div class="header">
+                  <div class="profile">
+                    <div class="avatar">
+                      <img
+                        src="https://fastly.picsum.photos/id/78/76/76.jpg?hmac=JTKguV2BqgWucpOGKWNrMuVdS0ci1Foex3-PbRAOX0E"
+                        alt=""
+                      />
+                    </div>
+                    <div class="avatar-content">
+                      <span class="title">Joe Jonas</span>
+                      <span class="sub-title">Developer</span>
+                    </div>
+                  </div>
+                  <div class="stars">
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                  </div>
+                </div>
+                <p class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="statements-item">
+                <div class="header">
+                  <div class="profile">
+                    <div class="avatar">
+                      <img
+                        src="https://fastly.picsum.photos/id/78/76/76.jpg?hmac=JTKguV2BqgWucpOGKWNrMuVdS0ci1Foex3-PbRAOX0E"
+                        alt=""
+                      />
+                    </div>
+                    <div class="avatar-content">
+                      <span class="title">Joe Jonas</span>
+                      <span class="sub-title">Developer</span>
+                    </div>
+                  </div>
+                  <div class="stars">
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                    <img src="./assets/icons/star-green.svg" alt="" />
+                  </div>
+                </div>
+                <p class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination statements-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+        </div>
+      </div>
+    </section>
+    <!-- equipe -->
+    <section id="team">
+      <div class="team-bg">
+        <div class="team-container">
+          <span class="team-title">equipe</span>
+          <div class="team-flex">
+            <div class="team-item">
+              <div class="team-header">
+                <img src="./assets/icons/projetos-icon-buscplacas.png" alt="" />
+                <div class="team-header-content">
+                  <span class="name">Joe jonas</span>
+                  <span class="function">Developer</span>
+                </div>
+              </div>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
+              </p>
+              <ul class="team-social-medias-icons">
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/facebook-icon.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/instagram-icon.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/twitter.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/linkeedin.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-item">
+              <div class="team-header">
+                <img src="./assets/icons/projetos-icon-buscplacas.png" alt="" />
+                <div class="team-header-content">
+                  <span class="name">Joe jonas</span>
+                  <span class="function">Developer</span>
+                </div>
+              </div>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
+              </p>
+              <ul class="team-social-medias-icons">
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/facebook-icon.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/instagram-icon.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/twitter.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/linkeedin.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-item">
+              <div class="team-header">
+                <img src="./assets/icons/projetos-icon-buscplacas.png" alt="" />
+                <div class="team-header-content">
+                  <span class="name">Joe jonas</span>
+                  <span class="function">Developer</span>
+                </div>
+              </div>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
+              </p>
+              <ul class="team-social-medias-icons">
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/facebook-icon.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/instagram-icon.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/twitter.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/linkeedin.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-item">
+              <div class="team-header">
+                <img src="./assets/icons/projetos-icon-buscplacas.png" alt="" />
+                <div class="team-header-content">
+                  <span class="name">Joe jonas</span>
+                  <span class="function">Developer</span>
+                </div>
+              </div>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
+              </p>
+              <ul class="team-social-medias-icons">
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/facebook-icon.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/instagram-icon.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/twitter.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank">
+                    <img src="./assets/icons/linkeedin.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="team-bg-img">
+          <img src="./assets/images/equipe-bg.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- clientes -->
+    <section id="clients">
+      <div class="clients-bg">
+        <div class="clients-container">
+          <span class="title">clientes</span>
+        </div>
+        <div class="swiper swiper2" id="clients-swipet-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="clients-item">
+                <a href="/" target="_blank">
+                  <img src="./assets/icons/client-placa-mais.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients-item">
+                <a href="/" target="_blank">
+                  <img src="./assets/icons/client-placa-mais.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients-item">
+                <a href="/" target="_blank">
+                  <img src="./assets/icons/client-placa-mais.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients-item">
+                <a href="/" target="_blank">
+                  <img src="./assets/icons/client-placa-mais.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients-item">
+                <a href="/" target="_blank"> </a>
+                <img src="./assets/icons/client-placa-mais.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients-item">
+                <a href="/" target="_blank">
+                  <img src="./assets/icons/client-placa-mais.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients-item">
+                <a href="/" target="_blank">
+                  <img src="./assets/icons/client-placa-mais.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients-item">
+                <a href="/" target="_blank">
+                  <img src="./assets/icons/client-placa-mais.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination clients-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+        </div>
+      </div>
+    </section>
+
+    <!--  contato -->
+    <section class="contact-bg" id="contact">
+      <div class="contact-flex">
+        <div class="contact-form-content">
+          <span class="title">contato</span>
+          <form id="form-contact">
+            <input
+              required
+              type="text"
+              name="name"
+              id="name"
+              class="input"
+              placeholder="nome"
+            />
+            <input
+              required
+              type="email"
+              name="email"
+              id="email"
+              class="input"
+              placeholder="email"
+            />
+            <input
+              required
+              type="text"
+              name="topic"
+              id="topic"
+              class="input"
+              placeholder="assunto"
+            />
+            <textarea
+              required
+              name="message"
+              id="message"
+              placeholder="mensagem"
+              class="input textarea"
+            ></textarea>
+            <button class="submit-button" type="submit">
+              Enviar
+              <img
+                src="./assets/icons/arrow-right-long-solid.svg"
+                alt=""
+                width="28px"
+              />
+            </button>
+          </form>
+        </div>
+        <div class="contact-section-2">
+          <span class="title">Conecte-se</span>
+          <p class="text">
+            Conte com nossa equipe altamente qualificada de desenvolvedores e
+            designers para criar soluções personalizadas que impulsionam o seu
+            crescimento e sucesso. Estamos prontos para ajudar sua empresa a se
+            destacar no mundo digital. Entre em contato conosco e vamos iniciar
+            uma jornada de sucesso juntos!
+          </p>
+          <span class="contact-information">
+            <img src="./assets/icons/email-icon@2x.png" alt="Email" />
+            contato@hexacode.com
+          </span>
+          <span class="contact-information">
+            <img src="./assets/icons/zap-icon@2x.png" alt="" />
+            (xx) x xxxx-xxxx
+          </span>
+          <ul class="socials-media-icons-list">
+            <li>
+              <img src="./assets/icons/facebook-icon-@2x.png" alt="" />
+            </li>
+            <li>
+              <img src="./assets/icons/instagram-icon-@2x.png" alt="" />
+            </li>
+            <li>
+              <img src="./assets/icons/twitter-@2x.png" alt="" />
+            </li>
+            <li>
+              <img src="./assets/icons/linkeedin-@2x.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-contact-1" style="z-index: -1">
+        <img src="./assets/images/bg-contact.png" alt="" />
+      </div>
+      <!-- <div class="bg-contact-2" style="z-index: -1">
+          <img src="./assets/images/bg-contact.png" alt="" />
+        </div> -->
+    </section>
+    <!-- footer -->
+    <footer class="footer-bg">
+      <div class="footer-flex">
+        <div class="logo-header">
+          <img src="./assets/images/LOGO-HEXACODE-1.png" alt="" />
+          <span
+            >© 2023 <span class="hexacode">HEXACODE</span> - Todos os direitos
+            reservados.</span
+          >
+        </div>
+        <div class="links">
+          <ul>
+            <li class="title">Links</li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="title">Links</li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="title">Links</li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+            <li class="item">
+              <a href="/">Link 1</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- modal-loading -->
+    <div class="modal-loading-container" id="modalLoading">
+      <div class="modal-loading-content">
+        <div class="lds-dual-ring"></div>
+        <p>Aguarde estamos carregando suas informações...</p>
+      </div>
+    </div>
+    <!-- modal de sucesso -->
+    <div class="modal-success-container" id="modalSuccess">
+      <div class="modal-success-content">
+        <div class="icon-close-modal-container close-modal-success">
+          <img src="./assets/icons/xmark-solid.svg" alt="" />
+        </div>
+        <div class="icon-success-container">
+          <img src="./assets/icons/check-icon-white.svg" alt="" />
+        </div>
+        <p>Mensagem enviada com sucesso!</p>
+        <p class="message-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          obcaecati esse repellat aperiam! Odit adipisci placeat eaque amet
+          quam.
+        </p>
+
+        <button class="button-close-modal close-modal-success">Fechar</button>
+      </div>
+    </div>
+    <!-- modal de erro -->
+    <div class="modal-error-container" id="modalError">
+      <div class="modal-error-content">
+        <div class="icon-close-modal-container close-modal-error">
+          <img src="./assets/icons/xmark-solid.svg" alt="" />
+        </div>
+        <div class="icon-error-container">
+          <img src="./assets/icons/xmark-solid.svg" alt="" />
+        </div>
+        <p>Ops! Parece que ocorreu um erro</p>
+        <p class="message-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          obcaecati esse repellat aperiam! Odit adipisci placeat eaque amet
+          quam.
+        </p>
+
+        <button class="button-close-modal close-modal-error">Fechar</button>
+      </div>
+    </div>
+    <!-- Slider main container -->
+  </body>
+</html>
+
+<!-- script de dependências -->
+<script src="https://cdn.jsdelivr.net/npm/glider-js/glider.min.js"></script>
+<script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- script slide - swiper-->
+<script>
+  const swiper = new Swiper('.swiper1', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    autoplay: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 10,
+    loop: true,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+      1220: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 10,
+      },
+      860: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 10,
+      },
+    },
+  });
+
+  const swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    autoplay: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 10,
+    loop: true,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+      1020: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 10,
+      },
+      860: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 10,
+      },
+      520: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 10,
+      },
+    },
+  });
+</script>
+
+<!-- script slide - glider -->
+<script>
+  const glider = new Glider(document.querySelector('.glider'), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    rewind: true,
+    draggable: true,
+    dots: '#dots',
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next',
+    },
+    responsive: [
+      {
+        breakpoint: 1420,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 1120,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  });
+</script>
+
+<!-- script do site -->
+<script>
+  const hexacodeTitle = document.getElementById('hexacode-title');
+  const hexacodeSubTitleText = document.getElementById(
+    'hexacode-sub-title-text'
+  );
+  const hexacodeSubTitleTextP1 = document.getElementById(
+    'hexacode-sub-title-p-1'
+  );
+  const hexacodeSubTitleTextP2 = document.getElementById(
+    'hexacode-sub-title-p-2'
+  );
+
+  const projectsTitle = document.getElementById('projects-content-projects');
+
+  hexacodeTitle.innerText = 'Bem-vindo à <Hexacode>';
+  hexacodeSubTitleTextP1.innerText = '<p>';
+  hexacodeSubTitleTextP2.innerText = '</p>';
+  hexacodeSubTitleText.innerText =
+    'A sua parceira confiável em desenvolvimento de sites e sistemas web e mobile!';
+  projectsTitle.innerText = '<projetos>';
+
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+
+    // if (!section) {
+    //   window.location.pathname('/');
+    // }
+
+    section.scrollIntoView({
+      block: 'center',
+      behavior: 'smooth',
+    });
+  }
+
+  function handleSubmitContact(e) {
+    e.preventDefault();
+
+    const modalLoading = document.getElementById('modalLoading');
+    modalLoading.classList.add('visible');
+    const buttonsNone = document.querySelectorAll('body');
+    buttonsNone.forEach((body) => {
+      body.classList.add('events-none');
+    });
+
+    setTimeout(() => {
+      modalLoading.classList.remove('visible');
+      buttonsNone.forEach((body) => {
+        body.classList.remove('events-none');
+      });
+      const modalSuccess = document.getElementById('modalSuccess');
+      modalSuccess.classList.add('visible');
+    }, [3000]);
+
+    // controle de erro futuro
+    // const modalError = document.getElementById('modalError');
+    // modalError.classList.add('visible');
+  }
+
+  const submitContact = document.getElementById('form-contact');
+  submitContact.addEventListener('submit', handleSubmitContact);
+
+  function handleCloseModalSuccess() {
+    const modalSuccess = document.getElementById('modalSuccess');
+    modalSuccess.classList.remove('visible');
+  }
+
+  const buttonCloseModalSuccess = document.querySelectorAll(
+    '.close-modal-success'
+  );
+  buttonCloseModalSuccess.forEach((button) => {
+    button.addEventListener('click', handleCloseModalSuccess);
+  });
+
+  function handleCloseModalError() {
+    const modalError = document.getElementById('modalError');
+    modalError.classList.remove('visible');
+  }
+
+  const buttonCloseModalError = document.querySelectorAll('.close-modal-error');
+  buttonCloseModalError.forEach((button) => {
+    button.addEventListener('click', handleCloseModalError);
+  });
+</script>
+
+<script src="./js/menu-mobile.js"></script>

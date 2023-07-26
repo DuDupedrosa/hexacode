@@ -1,0 +1,90 @@
+.footer-flex {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  justify-content: space-around;
+}
+
+.footer-flex div.logo-header img {
+  max-width: 348px;
+  margin-bottom: 32px;
+}
+
+.footer-flex div.logo-header span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #7a7a79;
+  margin-top: 32px;
+}
+
+.footer-flex div.logo-header span span.hexacode {
+  color: #b0cc49;
+  text-transform: uppercase;
+}
+
+.footer-flex div.links ul li.title {
+  color: #b0cc49;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-flex div.links ul li.item a {
+  color: #7a7a79;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.footer-flex div.links ul li.item + li.item {
+  margin-top: 20px;
+}
+
+.footer-flex div.links {
+  display: flex;
+  gap: 120px;
+}
+
+.footer-bg {
+  background-color: #131411;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 1220px) {
+  .footer-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bg {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer-flex div.links {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .footer-flex div.logo-header {
+    max-width: 240px;
+    align-self: center;
+  }
+
+  .footer-flex div.logo-header img {
+    max-width: 240px;
+  }
+
+  .footer-flex div.logo-header span {
+    text-align: center;
+    display: inline-block;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 520px) {
+}

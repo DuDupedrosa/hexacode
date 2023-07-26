@@ -1,0 +1,19 @@
+@import url(./global/reset.css);
+@import url(./global/header.css);
+@import url(./Home/firstSection.css);
+@import url(./Home/projects.css);
+@import url(./Home/project-carousel.css);
+@import url(./Home/services.css);
+@import url(./Home/statements.css);
+@import url(./Home/contact.css);
+@import url(./Home/team.css);
+@import url(./Home/clients.css);
+@import url(./global/footer.css);
+@import url(./global/modal-loading.css);
+@import url(./global/modal-success.css);
+@import url(./global/modal-error.css);
+
+.swiper {
+  width: 100%;
+  height: 300px;
+}
