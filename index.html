@@ -18,7 +18,7 @@
   />
   <link rel="stylesheet" href="./css/style.css" />
 
-  <body>
+  <body id="home">
     <header
       id="header-bg"
       class="header-bg"
@@ -74,22 +74,25 @@
           <ul class="header-nav-list-mobile" id="menu-mobile">
             <li>
               <div class="header-nav-list-button-consult-mobile consult-plate">
-                <button class="header-menu-mobile-button-contact">
+                <button
+                  class="header-menu-mobile-button-contact"
+                  onclick="scrollToSection('contact')"
+                >
                   Entre com contato
                 </button>
               </div>
             </li>
 
             <li>
-              <span class="text">Home</span>
+              <span class="text" onclick="scrollToSection('home')">Home</span>
             </li>
-            <li onclick="scrollToSection('products')">
+            <li onclick="scrollToSection('team')">
               <span class="text">Sobre</span>
             </li>
-            <li onclick="scrollToSection('about')">
+            <li onclick="scrollToSection('projects')">
               <span class="text">Projetos</span>
             </li>
-            <li onclick="scrollToSection('step-by-step')">
+            <li onclick="scrollToSection('services')">
               <span class="text">Serviços</span>
             </li>
           </ul>
