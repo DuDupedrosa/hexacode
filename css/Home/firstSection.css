@@ -233,4 +233,18 @@
   .hexacode-section-1-button-more-information img {
     width: 20px;
   }
+
+  .hexacode-section-1-cards {
+    margin-top: 0px;
+  }
+
+  /* /* .hexacode-section-1-mt {
+    margin-top: 0px;
+  } */
+
+  .hexacode-section-1 {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
