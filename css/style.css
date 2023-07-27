@@ -29,12 +29,24 @@
 }
 
 #particles {
-  height: 100vh;
+  height: 100vh !important;
+}
+
+@media (max-width: 1560px) {
+  #particles .pg-canvas {
+    height: calc(100vh + 100px) !important;
+    max-width: 100% !important;
+  }
 }
 
 @media (max-width: 1220px) {
   .intro {
     padding-left: 20px;
+  }
+
+  #particles .pg-canvas {
+    height: calc(100vh) !important;
+    max-width: 100% !important;
   }
 }
 
