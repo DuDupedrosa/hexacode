@@ -46,22 +46,7 @@
   height: 200px;
 }
 
-.clients-pagination {
-  width: 8% !important;
-}
-
 /* reponseive slide */
-@media (max-width: 1320px) {
-  .clients-pagination {
-    width: 12% !important;
-  }
-}
-
-@media (max-width: 1020px) {
-  .clients-pagination {
-    width: 18% !important;
-  }
-}
 
 @media (max-width: 1020px) {
   .clients-bg {
@@ -71,11 +56,5 @@
   .clients-item {
     display: grid;
     place-items: center;
-  }
-}
-
-@media (max-width: 620px) {
-  .clients-pagination {
-    width: 100% !important;
   }
 }

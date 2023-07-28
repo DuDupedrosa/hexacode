@@ -40,7 +40,7 @@
   border: 2px solid #707070;
   padding: 20px;
   padding-bottom: 40px;
-  width: 384px;
+  max-width: 384px;
   min-height: 520px;
   margin-top: 60px;
 }
@@ -55,6 +55,20 @@
   width: 113px;
   height: 113px;
   border-radius: 50%;
+}
+
+.project-pagination span {
+  background-color: #5c5d5a;
+  width: 16px;
+  height: 16px;
+}
+
+.swiper3 {
+  padding-bottom: 60px;
+}
+
+.project-pagination span.swiper-pagination-bullet-active {
+  background-color: #b0cc49;
 }
 
 .project-item span.name {
@@ -112,6 +126,23 @@
     padding-bottom: 200px;
     position: relative;
   }
+
+  .project-item span.name {
+    font-size: 28px;
+  }
+
+  .project-item p.text {
+    font-size: 14px;
+  }
+
+  .project-item {
+    min-height: auto;
+  }
+
+  .project-item div.icon-container img.icon {
+    width: 94px;
+    height: 94px;
+  }
 }
 
 @media (max-width: 769px) {
@@ -144,8 +175,17 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
   .project-item {
-    max-width: 320px;
+    max-width: 100%;
+  }
+
+  .project-item span.name {
+    font-size: 38px;
+  }
+
+  .project-item p.text {
+    font-size: 16px;
+    max-width: 100%;
   }
 }
