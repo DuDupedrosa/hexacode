@@ -12,6 +12,7 @@
 @import url(./global/modal-loading.css);
 @import url(./global/modal-success.css);
 @import url(./global/modal-error.css);
+@import url(./global/sweet-alert.css);
 
 .swiper {
   width: 100%;

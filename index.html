@@ -15,6 +15,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/demo.js"></script>
     <script src="./js/jquery-1.11.1.min.js"></script>
@@ -111,7 +113,10 @@
           <span id="hexacode-sub-title-text"></span>
           <span id="hexacode-sub-title-p-2"></span>
         </p>
-        <button class="hexacode-section-1-button-more-information">
+        <button
+          class="hexacode-section-1-button-more-information"
+          onclick="scrollToSection('contact')"
+        >
           Saiba mais
           <img src="./assets/icons/arrow-right-long-solid.svg" alt="" />
         </button>
@@ -1076,8 +1081,9 @@
             </div>
             <div class="swiper-slide">
               <div class="clients-item">
-                <a href="/" target="_blank"> </a>
-                <img src="./assets/icons/client-placa-mais.png" alt="" />
+                <a href="/" target="_blank">
+                  <img src="./assets/icons/client-placa-mais.png" alt="" />
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -1266,53 +1272,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- modal-loading -->
-    <div class="modal-loading-container" id="modalLoading">
-      <div class="modal-loading-content">
-        <div class="lds-dual-ring"></div>
-        <p>Aguarde estamos carregando suas informações...</p>
-      </div>
-    </div>
-    <!-- modal de sucesso -->
-    <div class="modal-success-container" id="modalSuccess">
-      <div class="modal-success-content">
-        <div class="icon-close-modal-container close-modal-success">
-          <img src="./assets/icons/xmark-solid.svg" alt="" />
-        </div>
-        <div class="icon-success-container">
-          <img src="./assets/icons/check-icon-white.svg" alt="" />
-        </div>
-        <p>Mensagem enviada com sucesso!</p>
-        <p class="message-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          obcaecati esse repellat aperiam! Odit adipisci placeat eaque amet
-          quam.
-        </p>
-
-        <button class="button-close-modal close-modal-success">Fechar</button>
-      </div>
-    </div>
-    <!-- modal de erro -->
-    <div class="modal-error-container" id="modalError">
-      <div class="modal-error-content">
-        <div class="icon-close-modal-container close-modal-error">
-          <img src="./assets/icons/xmark-solid.svg" alt="" />
-        </div>
-        <div class="icon-error-container">
-          <img src="./assets/icons/xmark-solid.svg" alt="" />
-        </div>
-        <p>Ops! Parece que ocorreu um erro</p>
-        <p class="message-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          obcaecati esse repellat aperiam! Odit adipisci placeat eaque amet
-          quam.
-        </p>
-
-        <button class="button-close-modal close-modal-error">Fechar</button>
-      </div>
-    </div>
-    <div></div>
     <!-- Slider main container -->
   </body>
 </html>
@@ -1321,6 +1280,9 @@
 <script src="https://cdn.jsdelivr.net/npm/glider-js/glider.min.js"></script>
 <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script></script>
 
 <!-- script slide - swiper-->
 <script>
@@ -1513,25 +1475,29 @@
   function handleSubmitContact(e) {
     e.preventDefault();
 
-    const modalLoading = document.getElementById('modalLoading');
-    modalLoading.classList.add('visible');
-    const buttonsNone = document.querySelectorAll('body');
-    buttonsNone.forEach((body) => {
-      body.classList.add('events-none');
-    });
+    // lógica deve ser montada para chamar o loading durante a request e depois
+    // mostra o loading
+    Swal.showLoading();
 
-    setTimeout(() => {
-      modalLoading.classList.remove('visible');
-      buttonsNone.forEach((body) => {
-        body.classList.remove('events-none');
+    // Simule uma tarefa que demora 3 segundos (por exemplo)
+    setTimeout(function () {
+      // tira loading
+      Swal.hideLoading();
+
+      // Mostra uma mensagem de sucesso após o carregamento
+      Swal.fire({
+        title: 'Sucesso!',
+        text: 'Sua mensagem foi enviada com sucesso, aguarde o nosso contato!',
+        icon: 'success',
+        confirmButtonText: 'Fechar',
       });
-      const modalSuccess = document.getElementById('modalSuccess');
-      modalSuccess.classList.add('visible');
-    }, [3000]);
-
-    // controle de erro futuro
-    // const modalError = document.getElementById('modalError');
-    // modalError.classList.add('visible');
+      // Swal.fire({
+      //   title: 'Erro!',
+      //   text: 'Ops! Parece que deu um erro, tente novamente!',
+      //   icon: 'error',
+      //   confirmButtonText: 'Fechar',
+      // });
+    }, 3000);
   }
 
   const submitContact = document.getElementById('form-contact');

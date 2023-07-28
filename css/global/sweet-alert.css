@@ -1,0 +1,49 @@
+.swal2-confirm {
+  background-color: #b0cc49 !important;
+  border: none !important;
+}
+
+.swal2-confirm:active,
+.swal2-confirm:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.swal2-title {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.swal2-content {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.swal2-confirm {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.swal2-loading {
+  /* display: grid;
+  place-items: center; */
+}
+
+@media (max-width: 768px) {
+  /* Reduza o tamanho da fonte do título e do texto para telas menores */
+  .swal2-title {
+    font-size: 20px !important;
+  }
+  .swal2-content {
+    font-size: 16px !important;
+  }
+  /* Reduza o tamanho do botão de confirmação para telas menores */
+  .swal2-confirm {
+    padding: 0.5rem 1rem !important;
+    font-size: 14px !important;
+    background-color: #b0cc49 !important;
+    border: none !important;
+  }
+
+  .swal2-popup {
+    width: 80% !important;
+    max-width: 400px !important;
+  }
+}
