@@ -73,12 +73,19 @@
 }
 
 .team-bg {
-  background-color: #131411;
+  background-image: linear-gradient(to bottom, #0b0c0a, #131411);
+  /* background-color: #131411; */
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 120px;
   padding-bottom: 120px;
   position: relative;
+}
+
+.team-blur {
+  position: absolute;
+  right: 0;
+  top: -200px;
 }
 
 .team-bg-img {
@@ -117,6 +124,12 @@
 
   .team-item {
     margin-top: 0px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .team-blur {
+    display: none;
   }
 }
 

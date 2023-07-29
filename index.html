@@ -15,9 +15,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="sweetalert2.min.css" />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/demo.js"></script>
     <script src="./js/jquery-1.11.1.min.js"></script>
     <script src="./js/jquery.particleground.min.js"></script>
@@ -207,54 +207,6 @@
         ></span>
 
         <div class="glider-contain">
-          <div
-            class="slide-navegations-buttons-flex slide-navigations-products-flex"
-          >
-            <!-- <button
-              aria-label="Previous"
-              class="glider-prev projects-slides-navegations-button slide-navegations-buttons"
-            >
-              <svg
-                width="45"
-                height="45"
-                viewBox="0 0 45 45"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_225_11)">
-                  <path
-                    d="M0.825927 20.5137C-0.272706 21.6123 -0.272706 23.3965 0.825927 24.4951L12.0759 35.7451C13.1746 36.8437 14.9587 36.8437 16.0574 35.7451C17.156 34.6465 17.156 32.8623 16.0574 31.7637L9.6062 25.3125L42.1873 25.3125C43.7429 25.3125 44.9998 24.0557 44.9998 22.5C44.9998 20.9443 43.7429 19.6875 42.1873 19.6875L9.6062 19.6875L16.0574 13.2363C17.156 12.1377 17.156 10.3535 16.0574 9.25488C14.9587 8.15625 13.1746 8.15625 12.0759 9.25488L0.825927 20.5049V20.5137Z"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_225_11">
-                    <rect
-                      width="45"
-                      height="45"
-                      fill="white"
-                      transform="matrix(-1 0 0 -1 44.9998 45)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-            <button
-              aria-label="Next"
-              class="glider-next projects-slides-navegations-button slide-navegations-buttons"
-            >
-              <svg
-                width="45"
-                height="45"
-                viewBox="0 0 45 45"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M44.1738 24.4863C45.2725 23.3877 45.2725 21.6035 44.1738 20.5049L32.9238 9.25488C31.8252 8.15625 30.041 8.15625 28.9424 9.25488C27.8437 10.3535 27.8437 12.1377 28.9424 13.2363L35.3936 19.6875H2.8125C1.25684 19.6875 0 20.9443 0 22.5C0 24.0557 1.25684 25.3125 2.8125 25.3125H35.3936L28.9424 31.7637C27.8437 32.8623 27.8437 34.6465 28.9424 35.7451C30.041 36.8438 31.8252 36.8438 32.9238 35.7451L44.1738 24.4951V24.4863Z"
-                />
-              </svg>
-            </button> -->
-          </div>
           <div class="swiper swiper3">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -934,9 +886,12 @@
             </div>
           </div>
         </div>
-        <div class="team-bg-img">
-          <img src="./assets/images/equipe-bg.png" alt="" />
+        <div class="team-blur">
+          <img src="./assets/images/blur-right.png" alt="" />
         </div>
+        <!-- <div class="team-bg-img">
+          <img src="./assets/images/equipe-bg.png" alt="" />
+        </div> -->
       </div>
     </section>
     <!-- clientes -->
@@ -1174,7 +1129,6 @@
 </html>
 
 <!-- script de dependências -->
-<script src="https://cdn.jsdelivr.net/npm/glider-js/glider.min.js"></script>
 <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -1291,44 +1245,6 @@
         spaceBetween: 10,
       },
     },
-  });
-</script>
-
-<!-- script slide - glider -->
-<script>
-  const glider = new Glider(document.querySelector('.glider'), {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    rewind: true,
-    draggable: true,
-    dots: '#dots',
-    arrows: {
-      prev: '.glider-prev',
-      next: '.glider-next',
-    },
-    responsive: [
-      {
-        breakpoint: 1420,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 1120,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 560,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-    ],
   });
 </script>
 
