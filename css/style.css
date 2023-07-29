@@ -14,6 +14,22 @@
 @import url(./global/modal-error.css);
 @import url(./global/sweet-alert.css);
 
+/* retirar o background branco padrão do autocomplete do google */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid white;
+  -webkit-text-fill-color: #f2f2f2 !important;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* estilos dos slides e das partículas - ficam aqui para sobrepor qualquer estilo do site */
 .swiper {
   width: 100%;
   height: 300px;
