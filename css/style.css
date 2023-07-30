@@ -14,6 +14,22 @@
 @import url(./global/modal-error.css);
 @import url(./global/sweet-alert.css);
 
+/* estilos de hover geral */
+.button-full-bg-hover:hover {
+  transition: 0.4s;
+  box-shadow: 0px 0px 1px 4px #b0cc49;
+}
+
+.button-outlined-bg-hover:hover {
+  transition: 0.4s;
+  box-shadow: 0px 0px 0px 3px #b0cc49;
+}
+
+.link-hover-white:hover {
+  transition: 0.2s;
+  color: #ffffff;
+}
+
 /* retirar o background branco padrão do autocomplete do google */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,

@@ -34,7 +34,9 @@
 }
 
 .services-bg {
-  background-color: #131411;
+  /* background-color: #131411; */
+  background-image: linear-gradient(to bottom, #131411 50%, #0b0c0a);
+
   padding-bottom: 120px;
 }
 
