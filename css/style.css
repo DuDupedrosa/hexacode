@@ -81,7 +81,7 @@ select:-webkit-autofill:focus {
   .intro {
     padding-left: 20px;
     /* padding-top: 160px; */
-    top: 60%;
+    top: 55%;
   }
 
   #particles .pg-canvas {
